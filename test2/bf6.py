@@ -1,5 +1,7 @@
 from bs4 import BeautifulSoup
 from requests import *
+#해당 사이트에 접속하여 Devtool로 볼 경우 data가 확인이 되지만 실제 크롤링 후 스크래핑 시 데이터가 확인이 안될 경우는
+#ajax 및 자바스크립트로 직접 태그가 생성 되도록 제작한 되었음. 이럴경우 스크래핑 하기가 어려워짐. 
 
 url = "https://www.koreabaseball.com/TeamRank/TeamRank.aspx"
 result = get(url)

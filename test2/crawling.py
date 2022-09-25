@@ -60,4 +60,3 @@ root.resizable(False, False)
 root.mainloop() #실행 . 무조건 맨 아래에 생성 
 
 #C:\python1>cd test2 crawling.py 있는 경로로 가서 pyinstaller -w crawling.py 선언 하면 .exe 파일 만들어짐.
-# https://browse.auction.co.kr/search?keyword=%ED%8E%9C%EC%85%98%EC%98%88%EC%95%BD

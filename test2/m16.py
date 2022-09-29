@@ -16,13 +16,18 @@ woman = pd.read_excel("person.xlsx", usecols="AX:BA")
 
 #data.T or data : index에 대한 위치가 변경됨
 #print(data.T)
-
 #print(data.columns)
+
+
+#여러 데이터 중 한개만 사용하는 사항 (여러 데이터 출력 시 bar 그래프가 올바르게 반영되지않음)
 mpt.Figure(figsize=(10,8))
 
-w1 = 
-mpt.plot(man//1000, data.index,  marker='o')
-w2 = 
-mpt.plot(woman//1000, data.index, marker='*')
+titles = data.columns;  #0~4세, 5~0세.. 컬럼값
+mandata = man.loc[0] #데이터를 한개만 들고오기 . bar 데이터 인식문제로 1개만.. 
+mpt.bar(data.columns, man.loc[0])
+
+#plot 그래프
+mpt.plot(data.columns, woman.loc[0], color="red")
+
 
 mpt.show()
